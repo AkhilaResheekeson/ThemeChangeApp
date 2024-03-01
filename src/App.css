@@ -1,38 +1,64 @@
-.App {
+.App.dark {
+  text-align: left;
+  background-color:  rgb(126, 27, 27);
+}
+.App.light {
+  text-align: left;
+  background-color: antiquewhite;
+}
+
+h1.dark{
   text-align: center;
+  background-color: rgb(126, 27, 27);
+  color: antiquewhite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1.light{
+  text-align: center;
+  background-color: antiquewhite;
+  color: rgb(126, 27, 27);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li.dark{
+  background-color: rgb(126, 27, 27);
+  color: antiquewhite;
+  list-style-type:none;
+  margin: 10px 10px;
+  padding: 0px 5px;
+  font-size: 20px;
+  border: dashed antiquewhite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li.light{
+  background-color: antiquewhite;
+  color: rgb(126, 27, 27);
+  list-style-type:none;
+  margin: 10px 10px;
+  padding: 0px 5px;
+  font-size: 20px;
+  border: dashed rgb(126, 27, 27);
 }
 
-.App-link {
-  color: #61dafb;
+li.dark:hover {
+  background-color:antiquewhite;
+  color: rgb(126, 27, 27); 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li.light:hover {
+    background-color: rgb(126, 27, 27); 
+    color:antiquewhite;
+}
+
+button.dark{
+  float: right;
+  color:antiquewhite;
+  background-color: rgb(126, 27, 27); 
+  border: solid 1px antiquewhite;
+}
+
+button.light{
+  float: right;
+  color:rgb(126, 27, 27); 
+  background-color:  antiquewhite;
+  border: solid 1px rgb(126, 27, 27); 
 }
